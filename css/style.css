@@ -1,0 +1,101 @@
+ :root {
+     --primary-color: #24353f;
+     --border-color: rgb(179, 85, 85);
+     --btn-color: rgb(179, 85, 85);
+ }
+
+ body {
+     font-family: "Roboto", sans-serif;
+ }
+
+ /*__________ H E A D E R __________ */
+ h1 {
+     background-image: linear-gradient(to right, #f06cc8, #769bdf);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     width: fit-content;
+ }
+
+ .logo-img {
+     width: 60px;
+     object-fit: contain;
+ }
+
+ .nav-item {
+     border: 2px solid transparent;
+     transition: all ease 0.4s;
+ }
+
+ .nav-item.active-link {
+     border: 2px solid var(--border-color) !important;
+ }
+
+ .nav-item:hover {
+     border: 2px solid var(--border-color) !important;
+ }
+
+ .btn {
+     background-color: var(--primary-color);
+ }
+
+ /*__________ H E R O   S E C T I O N __________ */
+ .hero {
+     background-image: url('../imgs/bg-weather.png');
+     background-position: center;
+     background-size: cover;
+     background-attachment: scroll;
+     padding-block: 150px;
+ }
+
+ .btn {
+     z-index: 100 !important;
+ }
+
+ .form-control {
+     margin-bottom: 70px;
+ }
+
+ .form-control:focus {
+     border-color: var(--border-color);
+     box-shadow: none;
+ }
+
+ /*__________ F O R E C A S T I N G   S E C T I O N __________ */
+ .card-body {
+     padding: 30px 20px;
+     background: #EEAECA;
+     background: radial-gradient(circle, rgb(205 127 160) 0%, rgb(0 0 0) 100%);
+ }
+
+ section.forecasting {
+     margin-top: -100px;
+ }
+
+ .card-header {
+     color: rgb(211, 182, 182) !important;
+ }
+
+ /*__________ F O O T E R __________ */
+ footer .social-icons i {
+     width: 40px;
+     height: 40px;
+     border-radius: 50%;
+     background-color: #bfaeae;
+     transition: all ease o.4s;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .social-icons a {
+     text-decoration: none !important;
+ }
+
+ footer .fa-brands:hover {
+     color: #bfaeae;
+     background-color: var(--border-color);
+ }
+
+ .card {
+    border-color: aliceblue;
+ }

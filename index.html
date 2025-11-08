@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon -->
+    <link rel="icon" href="./imgs/fav-icon.png" />
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!-- font awesome -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <!-- Animated Css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Roboto google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- utilities -->
+    <link rel="stylesheet" href="./css/utilities.css">
+    <!-- Media query -->
+    <link rel="stylesheet" href="./css/media.css">
+    <!-- Min stylesheet -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Weather</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark bg-gradient p-3">
+            <div class="container">
+                <!-- logo -->
+                <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+                    <img src="./imgs/fav-icon.png" alt="" class="logo-img">
+                    <h1 class="fw-700 fs-22">Weather</h1>
+                </a>
+                <!-- navbar toggle button-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-5 d-flex">
+                        <li class="nav-item active-link rounded-pill px-2 border border-3-border-color ">
+                            <a class="nav-link active te" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item rounded-pill px-2">
+                            <a class="nav-link" href="#">News</a>
+                        </li>
+                        <li class="nav-item rounded-pill px-2">
+                            <a class="nav-link" href="#">Live Cameras</a>
+                        </li>
+                        <li class="nav-item rounded-pill px-2">
+                            <a class="nav-link" href="#">Photos</a>
+                        </li>
+                        <li class="nav-item rounded-pill px-2">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- hero section -->
+    <section class="hero">
+        <div class="container">
+            <div class="input-group position-relative">
+                <input type="text" class="form-control p-3 rounded-pill" id="userLocation"
+                    placeholder="Find your Location">
+                <label for="userLocation"></label>
+                <button class="btn btn-outline-secondary rounded-pill px-5 end-0 position-absolute z-3 m-2 btn-color"
+                    type="button" id="btn-find">Find</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- forecasting section -->
+    <section class="forecasting mb-5">
+        <div class="container">
+            <div class="row">
+                <!-- card weather first day -->
+                <div class="card px-0 col-sm-12 col-lg-4 shadow-lg">
+                    <div class="today card-header d-flex justify-content-between text-warning fs-18">
+                        <span class="day">Wednesdays</span>
+                        <span class="date">5 November</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="fs-18 mb-4 d-block city">Cairo</span>
+                        <h5 class="card-title temp fw-700 fs-90">24.1<sup>o</sup>C</h5>
+                        <div class="icon">
+                            <img src="./imgs/moon.png" alt="moon icon grey color" class="d-block pt-3">
+                        </div>
+
+                        <span class="py-3 text-info d-block ps-2 text">Clear</span>
+                        <div class="card-footer my-3 text-center">
+                            <div class="icon d-inline-block">
+                                <img src="./imgs/icon-umberella.png" alt="umberella icon">
+                            </div>
+                            <span class="humidity pe-4">20%</span>
+                            <img src="./imgs/icon-wind.png" alt="wind icon in grey color">
+                            <span class="wind pe-4">18km/h</span>
+                            <img src="./imgs/icon-compass.png" alt="wind icon in grey color">
+                            <span class="wind-direct">East</span>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- card weather second day -->
+                <div class="card px-0 col-sm-12 col-lg-4 shadow-lg">
+                    <div class="card-header text-center fs-18 secDay">Thursday</div>
+                    <div class="card-body text-center py-3 bg-gradient bg-dark">
+                        <div class="iconSecond py-5">
+                            <img src="./imgs/sun.png" alt="sun icon in orange color" class="w-25">
+                        </div>
+
+                        <h5 class="card-title fw-700 fs-28 secDayMaxTemp">28.7°C</h5>
+                        <span class="secDayMinTemp">20.3°</span>
+                        <p class="py-5 text-info secDayStatus">Sunny</p>
+                    </div>
+                </div>
+
+                <!-- card weather third day -->
+                <div class="card px-0 col-sm-12 col-lg-4 shadow-lg">
+                    <div class="card-header text-warning text-center fs-18 thirdDay">Friday</div>
+                    <div class="card-body text-center py-3">
+                        <div class="iconThird py-5">
+                            <img src="./imgs/windy.png" alt="sun icon in orange color" class="w-25">
+                        </div>
+
+                        <h5 class="card-title fw-700 fs-28 thirdDayMaxTemp">18.7°C</h5>
+                        <span class="thirdDayMinTemp">17.3°</span>
+                        <p class="py-5 text-info thirdDayStatus">Windy</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="bg-dark bg-gradient py-5">
+        <div class="container ">
+            <div class="row align-items-center">
+                <div class="col-sm-12 col-md-8">
+                    <div class="input-group footer-input position-relative">
+                        <input type="email" class="form-control w-50 d-block p-3 rounded-pill mb-0" id="userEmail"
+                            placeholder="Enter your email to subscribe...">
+                        <label for="userEmail"></label>
+                        <button
+                            class="btn btn-outline-secondary rounded-pill px-3 end-0 position-absolute z-3 m-2 btn-color"
+                            type="submit" id="button-addon2">Subscribe</button>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <ul class="social-icons gap-3 list-unstyled d-flex justify-content-center align-items-center">
+                        <li>
+                            <a href="#"><i class="fa-brands fa-facebook-f btn-color fs-20"></i></a>
+                        </li>
+
+                        <li>
+                            <a href="#"><i class="fa-brands fa-twitter btn-color fs-20"></i></a>
+                        </li>
+
+                        <li>
+                            <a href="#"><i class="fa-brands fa-google-plus btn-color fs-20"></i></a>
+                        </li>
+
+                        <li>
+                            <a href="#"><i class="fa-brands fa-pinterest btn-color fs-20"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <p class="py-4">Copyright 2014 Company name. <span class="btn-color">
+                        Designed by Themezy.</span> All rights reserved
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <!-- sweet alert js -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- bootstrap js -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+
+    <!-- main js file -->
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

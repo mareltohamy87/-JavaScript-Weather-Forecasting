@@ -1,0 +1,127 @@
+/* ______________ utilities css ___________ */
+.border-color {
+    border-color: var(--border-color);
+}
+
+.btn-color {
+    color: var(--btn-color);
+}
+.gap-30 {
+    gap: 30px;
+}
+
+.p-20 {
+    padding: 20px;
+}
+
+.py-20 {
+    padding-block: 20px;
+}
+
+.py-40 {
+    padding-block: 40px;
+}
+
+.py-6 {
+    padding-block: 64px;
+}
+
+.px-20 {
+    padding-inline: 20px;
+}
+
+.pt-64 {
+    padding-top: 64px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.mb-28 {
+    margin-bottom: 28px;
+}
+
+.mb-40 {
+    margin-bottom: 40px;
+}
+
+.mb-64 {
+    margin-bottom: 64px;
+}
+
+.mt-64 {
+    margin-top: 64px;
+}
+
+.ps-30 {
+    padding-left: 30px;
+}
+
+.fw-300 {
+    font-weight: 300;
+}
+
+.fw-400 {
+    font-weight: 400;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.fw-700 {
+    font-weight: 700;
+}
+
+.lh-2 {
+    line-height: 2.13rem;
+}
+
+.fs-20 {
+    font-size: 20px;
+}
+
+.fs-22 {
+    font-size: 22px;
+}
+
+.fs-25 {
+    font-size: 25px;
+}
+
+.fs-28 {
+    font-size: 28px;
+}
+
+.fs-40 {
+    font-size: 40px;
+}
+
+.fs-48 {
+    font-size: 48px;
+}
+
+.fs-50 {
+    font-size: 50px;
+}
+
+.fs-90 {
+    font-size: 90px;
+}
+
+.fs-16 {
+    font-size: 16px;
+}
+
+.fs-18 {
+    font-size: 18px;
+}
+
+.w-90 {
+    width: 90%;
+}
+
+.z-100 {
+    z-index: 100;
+}
